@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mobile develop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="static/styles/main.css">
+
+</head>
+<body>
+    <section class="page pageShow" id="welcome">
+        <div class="tree">
+            <img src="static/imgs/tree.jpg"/>
+            <div class="welcome2">
+                <img src="static/imgs/title.png" alt="">
+                <span class="shake"></span>
+            </div>
+            <img src="static/imgs/title2.png" alt="" class="tree3">
+            <span class="cloud"></span>
+            <span class="cloud"></span>
+            <span class="cloud"></span>
+        </div>
+    </section>
+    <section class="page">上传成功</section>
+    <secion class="page">表单页</secion>
+    <secion class="page">新闻线索</secion>
+    <section class="page">跳转页面</section>
+    <secion class="page pageShow">首页</secion>
+    <script type="text/javascript" src="static/scripts/base.js"></script>
+    <script type="text/javascript">
+        var touchX = 0;
+        var iStartTouchX=0;
+        var iX=0;
+        var iStartX=0;
+        bind(document.body,'touchstart',function(ev){
+            ev = ev.changedTouches[0];
+            iStartTouchX = ev.pageX;
+            iStartX = ix;
+        });
+        bind(document.body,'touchmove',function(ev){
+            ev = ev.changedTouches[0];
+            var iDis = ev.pageX - iStartTouchX;
+            iX = iStartX + iDis;
+
+        });
+    </script>
+</body>
+</html>

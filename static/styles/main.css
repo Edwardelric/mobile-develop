@@ -1,0 +1,104 @@
+/** Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video, input { margin: 0; padding: 0; border: 0; font-size: 100%; font-weight: normal; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* custom */
+a { color: #7e8c8d; text-decoration: none; -webkit-backface-visibility: hidden; }
+
+li { list-style: none; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+
+::-webkit-scrollbar-track-piece { background-color: rgba(0, 0, 0, 0.2); -webkit-border-radius: 6px; }
+
+::-webkit-scrollbar-thumb:vertical { height: 5px; background-color: rgba(125, 125, 125, 0.7); -webkit-border-radius: 6px; }
+
+::-webkit-scrollbar-thumb:horizontal { width: 5px; background-color: rgba(125, 125, 125, 0.7); -webkit-border-radius: 6px; }
+
+html, body { width: 100%; }
+
+body { -webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent; }
+
+input { outline: none; }
+
+.page { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background-color: #fff; z-index: 1; display: none; }
+
+.pageShow { display: block; }
+
+.page:nth-of-type(1) { z-index: 10; }
+
+.page:nth-of-type(2) { z-index: 9; }
+
+.page:nth-of-type(3) { z-index: 8; }
+
+.page:nth-of-type(4) { z-index: 7; }
+
+.page:nth-of-type(5) { z-index: 6; }
+
+@-webkit-keyframes tree { 100% { -webkit-transform: translateY(0px); transform: translateY(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes cloud1 { 0% { -webkit-transform: translateX(0px); transform: translateX(0px);
+    opacity: 1; }
+  20% { -webkit-transform: translateX(20px); transform: translateX(20px);
+    opacity: 1; }
+  40% { -webkit-transform: translateX(40px); transform: translateX(40px);
+    opacity: 1; }
+  60% { -webkit-transform: translateX(60px); transform: translateX(60px);
+    opacity: 1; }
+  80% { -webkit-transform: translateX(40px); transform: translateX(40px);
+    opacity: 1; }
+  100% { -webkit-transform: translateX(20px); transform: translateX(20px);
+    opacity: 1; } }
+
+@-webkit-keyframes shake { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  25% { -webkit-transform: rotate(5deg); transform: rotate(5deg); }
+  50% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  75% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
+  100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); } }
+
+.tree { position: absolute; left: 0; top: 10%; width: 100%; -webkit-transform: translateY(100px); transform: translateY(100px); opacity: 0; -webkit-animation: tree 1s; animation: tree 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.tree img { width: 100%; }
+
+#logo { position: absolute; left: 0; bottom: 5%; width: 100%; text-align: center; opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px); -webkit-animation: tree 1s 0.4s; animation: tree 1s 0.4s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.welcome2 { position: relative; padding-top: 50px; opacity: 0; -webkit-transform: translateY(50px); transform: translateY(50px); -webkit-animation: tree 1s 0.2s; animation: tree 1s 0.2s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.shake { position: absolute; top: 19px; left: 302px; width: 28px; height: 31px; background: url("../imgs/shake.png") no-repeat; -webkit-animation: shake 0.8s linear infinite; animation: shake 0.8s linear infinite; -webkit-transform-origin: 0 30px; transform-origin: 0 30px; }
+
+.tree3 { padding-top: 20px; opacity: 0; -webkit-transform: translatey(30px); transform: translatey(30px); -webkit-animation: tree 1s 0.3s; animation: tree 1s 0.3s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+.cloud { position: absolute; z-index: 100; background: url("../imgs/cloud.png") no-repeat; background-size: contain; opacity: 0; -webkit-animation: cloud1 10s linear 0.3s infinite; animation: cloud1 10s linear 0.3s infinite; }
+
+.cloud:nth-of-type(1) { left: 432px; top: 15px; width: 58px; height: 44px; }
+
+.cloud:nth-of-type(2) { left: 29px; top: 77px; width: 91px; height: 70px; }
+
+.cloud:nth-of-type(3) { left: 402px; top: 142px; width: 54px; height: 41px; }
+
+#picList { overflow: hidden; width: 500%; }
+
+#picList li { float: left; width: 20%; }
+
+#picList img { width: 100%; height: 342px; }
+
+.picMask { height: 102px; position: absolute; left: 0; bottom: 0; width: 100%; background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.8) 10%, transparent); background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.8) 20%, transparent); background: linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.8) 20%, transparent); }
+
+.picMask p { font-size: 29px; line-height: 120px; text-indent: 26px; color: #fff; }
+
+.picMask nav { height: 10px; right: 26px; top: 56px; position: absolute; }
+
+.picMask nav a { float: left; width: 10px; height: 10px; border-radius: 5px; background: #fff; opacity: 0.5; margin-left: 15px; }
+
+.picMask nav a.active { opacity: 1; }
